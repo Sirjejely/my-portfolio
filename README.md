@@ -17,14 +17,14 @@ I am a **Biomedical Engineer** with extensive experience in medical equipment in
 ✅ **Personal Branding** with strategically placed professional image.  
 ✅ **Contact Links** that open in a new tab.  
 ✅ **Showcase of Projects** demonstrating my skills and expertise.  
-✅ **Deployed Live** for accessibility.
+
 
 ## 📁 Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
 - **Styling Frameworks**: Flexbox, Grid, Media Queries
 - **Backend**: Node.js, Express.js
 - **Database**: MySQL
-- **Hosting**: GitHub Pages / Netlify (Frontend), Localhost (Backend)
+- **Hosting**: GitHub Pages, Localhost (Backend)
 
 ## 🗄️ MySQL Database Setup
 

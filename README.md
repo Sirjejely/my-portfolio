@@ -22,7 +22,65 @@ I am a **Biomedical Engineer** with extensive experience in medical equipment in
 ## 📁 Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
 - **Styling Frameworks**: Flexbox, Grid, Media Queries
-- **Hosting**: GitHub Pages / Netlify
+- **Backend**: Node.js, Express.js
+- **Database**: MySQL
+- **Hosting**: GitHub Pages / Netlify (Frontend), Localhost (Backend)
+
+## 🗄️ MySQL Database Setup
+
+To set up the MySQL database for this project:
+
+1. Install MySQL Server and create the database using this SQL script:
+
+```sql
+-- Create database
+CREATE DATABASE IF NOT EXISTS myportfolio;
+
+-- Use the database
+USE myportfolio;
+
+-- Create messages table
+CREATE TABLE IF NOT EXISTS messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    name VARCHAR(255),
+    email VARCHAR(255)
+);
+```
+
+2. Add your MySQL credentials to the `server.js` file:
+```js
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'your_mysql_username',
+  password: 'your_mysql_password',
+  database: 'myportfolio'
+});
+```
+
+3. Install backend dependencies:
+```bash
+npm install express mysql body-parser cors
+```
+
+4. Start the server:
+```bash
+node server.js
+```
+
+## 📦 Project Structure
+```
+my-portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+├── server.js
+├── database_setup.sql
+├── README.md
+└── package.json
+```
 
 ## 📞 Contact Me
 Feel free to reach out for collaborations, job opportunities, or tech discussions:
